@@ -1,0 +1,155 @@
+/* основной цвет текста  #212121; */
+/* второстепенный цвет текста  #757575; */
+/* цвет акцента #2196F3; */
+
+:root {
+  --primary-text-color: #212121;
+  --secondary-text-color: #757575;
+  --accent-color: #2196f3;
+  --background-color: #2f303a;
+  --general-color: white;
+}
+
+/*index.html*/
+
+/* body */
+body {
+  background-color: var(--general-color);
+  color: var(--primary-text-color);
+  font-family: 'Roboto';
+}
+body .link:hover,
+body .link:focus {
+  color: var(--accent-color);
+}
+
+/*Верхняя линия*/
+.logo {
+  font-family: 'Raleway';
+  font-size: 26px;
+  line-height: 31px;
+}
+.nav {
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+}
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+.site-nav .link {
+  color: var(--primary-text-color);
+}
+.site-nav .link:hover {
+  color: var(--accent-color);
+}
+/*Номер и почта (header footer)*/
+.contacts {
+  color: var(--secondary-text-color);
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+/*Шапка*/
+.main-section {
+  background-color: var(--background-color);
+}
+.main-title {
+  font-family: 'Roboto';
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
+  color: var(--general-color);
+}
+.main-section button {
+  background-color: var(--accent-color);
+  color: var(--general-color);
+}
+.main-section button:hover,
+.main-section button:focus {
+  color: var(--primary-text-color);
+}
+
+/*Особенности*/
+.features h3 {
+  font-family: 'Roboto';
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+}
+.features p {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--secondary-text-color);
+}
+
+/*Загловки 2го уровня*/
+.heading {
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-style: normal;
+  font-size: 36px;
+  line-height: 42px;
+}
+
+/*Наша команда*/
+.team h3 {
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+}
+.team p {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--secondary-text-color);
+}
+
+/*Footer*/
+footer {
+  background-color: #2f303a;
+  color: var(--general-color);
+}
+footer .address {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 24px;
+}
+.brandmark {
+  color: var(--general-color);
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+}
+.brandmark:focus,
+.brandmark:hover {
+  color: var(--accent-color);
+}
+
+/*portfolio.html*/
+
+/*main*/
+.models h2 {
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 36px;
+}
+.models p {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: var(--secondary-text-color);
+}

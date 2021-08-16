@@ -1,155 +1,225 @@
-/* основной цвет текста  #212121; */
-/* второстепенный цвет текста  #757575; */
-/* цвет акцента #2196F3; */
+/*primary-background color  #FFFFFF */
+/*secondary-background color #757575 */
+/*footer-background color #000000 */
+/*primaryy-text color #212121 */
+/*seconday-text color #757575 */
+/*accent color #2196F3 */
 
 :root {
-  --primary-text-color: #212121;
-  --secondary-text-color: #757575;
+  --primary-background-color: #ffffff;
+  --secondary-background-color: #757575;
+  --footer: #000000;
+  --primaryy-text-color: #212121;
+  --seconday-text-color: #757575;
   --accent-color: #2196f3;
-  --background-color: #2f303a;
-  --general-color: white;
+  --button: #f5f4fa;
 }
 
+li {
+  list-style-type: none;
+}
+body {
+  color: var(--primaryy-text-color);
+  font-family: 'Roboto';
+  background-color: var(--primary-background-color);
+}
 /*index.html*/
 
-/* body */
-body {
-  background-color: var(--general-color);
-  color: var(--primary-text-color);
-  font-family: 'Roboto';
-}
-body .link:hover,
-body .link:focus {
-  color: var(--accent-color);
-}
+/*header*/
 
-/*Верхняя линия*/
-.logo {
-  font-family: 'Raleway';
-  font-size: 26px;
-  line-height: 31px;
-}
-.nav {
+.menu-nav .link {
+  color: var(--primaryy-text-color);
   font-family: 'Roboto';
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.2;
+  text-decoration-line: none;
+  letter-spacing: 0, 02em;
 }
-.site-nav .link.current {
-  color: var(--accent-color);
+.menu-nav .contacts {
+  color: var(--seconday-text-color);
 }
-.site-nav .link {
-  color: var(--primary-text-color);
-}
-.site-nav .link:hover {
-  color: var(--accent-color);
-}
-/*Номер и почта (header footer)*/
-.contacts {
-  color: var(--secondary-text-color);
+.link {
   font-family: 'Roboto';
-  font-weight: 400;
-  font-style: normal;
+  font-weight: 500;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.2;
+  letter-spacing: 0, 02em;
+}
+.link:hover {
+  color: var(--accent-color);
+}
+.link:focus {
+  color: var(--accent-color);
+}
+.logo {
+  color: var(--footer);
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  text-decoration-line: none;
+  letter-spacing: 0, 03em;
+}
+.logo-part {
+  color: var(--accent-color);
 }
 
-/*Шапка*/
+/*main*/
+
 .main-section {
-  background-color: var(--background-color);
+  text-align: center;
+  background-color: #2f303a;
 }
-.main-title {
+
+.heading {
+  color: var(--primary-background-color);
   font-family: 'Roboto';
   font-weight: 900;
   font-size: 44px;
-  line-height: 60px;
-  color: var(--general-color);
+  line-height: 1.4;
+  text-transform: uppercase;
+  letter-spacing: 0, 06em;
 }
-.main-section button {
+
+.button {
   background-color: var(--accent-color);
-  color: var(--general-color);
-}
-.main-section button:hover,
-.main-section button:focus {
-  color: var(--primary-text-color);
-}
-
-/*Особенности*/
-.features h3 {
-  font-family: 'Roboto';
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 17px;
-}
-.features p {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-size: 14px;
-  line-height: 24px;
-  color: var(--secondary-text-color);
-}
-
-/*Загловки 2го уровня*/
-.heading {
+  color: var(--primary-background-color);
   font-family: 'Roboto';
   font-weight: 700;
-  font-style: normal;
-  font-size: 36px;
-  line-height: 42px;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0, 06em;
+}
+.features .feature-names {
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  letter-spacing: 0, 03em;
+}
+.features .feature-def {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--seconday-text-color);
+  letter-spacing: 0, 03em;
+}
+.team-info {
+  background-color: var(--button);
 }
 
-/*Наша команда*/
-.team h3 {
+.secondary-heading {
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0, 03em;
+}
+
+.team .team-member {
   font-family: 'Roboto';
   font-weight: 500;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0, 03em;
 }
-.team p {
+.team .team-occupation {
+  color: var(--seconday-text-color);
   font-family: 'Roboto';
   font-weight: 400;
   font-size: 16px;
-  line-height: 19px;
-  color: var(--secondary-text-color);
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0, 03em;
 }
 
-/*Footer*/
-footer {
-  background-color: #2f303a;
-  color: var(--general-color);
+/*footer*/
+.basement {
+  background-color: var(--footer);
 }
-footer .address {
-  font-family: 'Roboto';
-  font-weight: 400;
-  font-style: normal;
-  font-size: 14px;
-  line-height: 24px;
-}
+
 .brandmark {
-  color: var(--general-color);
+  color: var(--primary-background-color);
   font-family: 'Raleway';
   font-weight: 700;
   font-size: 26px;
-  line-height: 31px;
+  line-height: 1.2;
+  text-decoration-line: none;
+  letter-spacing: 0, 03em;
 }
-.brandmark:focus,
-.brandmark:hover {
+.brandmark:hover,
+.brandmark:focus {
   color: var(--accent-color);
 }
+.address {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 1.7;
+  color: var(--primary-background-color);
+  letter-spacing: 0, 03em;
+}
+.basement .contacts {
+  color: var(--seconday-text-color);
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 1.7;
+  letter-spacing: 0, 03em;
+}
+.basement .contacts:focus,
+.basement .contacts:hover {
+  color: var(--primary-background-color);
+}
+/*Portfolio*/
 
-/*portfolio.html*/
+.portfolio-heading {
+  display: none;
+}
 
-/*main*/
-.models h2 {
+.button-menu {
+  background-color: var(--button);
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.7;
+  letter-spacing: 0, 03em;
+}
+.button-menu:focus,
+.button-menu:hover {
+  background-color: var(--accent-color);
+  color: var(--primary-background-color);
+}
+
+.button-main {
+  background-color: var(--accent-color);
+  color: var(--primary-background-color);
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.7;
+  letter-spacing: 0, 03em;
+}
+.models .models-heading {
+  color: var(--primaryy-text-color);
   font-family: 'Roboto';
   font-weight: 700;
   font-size: 18px;
-  line-height: 36px;
+  line-height: 2;
+  letter-spacing: 0, 06em;
 }
-.models p {
+.models .models-def {
+  color: var(--secondary-background-color);
   font-family: 'Roboto';
   font-weight: 400;
   font-size: 16px;
-  line-height: 30px;
-  color: var(--secondary-text-color);
+  line-height: 2;
+  letter-spacing: 0, 03em;
 }

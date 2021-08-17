@@ -20,7 +20,7 @@ li {
 }
 body {
   color: var(--primaryy-text-color);
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   background-color: var(--primary-background-color);
 }
 /*index.html*/
@@ -29,27 +29,28 @@ body {
 
 .menu-nav .link {
   color: var(--primaryy-text-color);
-  font-family: 'Roboto';
   font-weight: 500;
   font-size: 14px;
   line-height: 1.2;
   text-decoration-line: none;
-  letter-spacing: 0, 02em;
+  letter-spacing: 0.02em;
 }
 .menu-nav .contacts {
   color: var(--seconday-text-color);
 }
 .link {
-  font-family: 'Roboto';
   font-weight: 500;
   font-size: 14px;
   line-height: 1.2;
-  letter-spacing: 0, 02em;
+  letter-spacing: 0.02em;
 }
 .link:hover {
   color: var(--accent-color);
 }
 .link:focus {
+  color: var(--accent-color);
+}
+.menu-nav .current {
   color: var(--accent-color);
 }
 .logo {
@@ -59,7 +60,7 @@ body {
   font-size: 26px;
   line-height: 1.2;
   text-decoration-line: none;
-  letter-spacing: 0, 03em;
+  letter-spacing: 0.03em;
 }
 .logo-part {
   color: var(--accent-color);
@@ -74,68 +75,65 @@ body {
 
 .heading {
   color: var(--primary-background-color);
-  font-family: 'Roboto';
   font-weight: 900;
   font-size: 44px;
   line-height: 1.4;
   text-transform: uppercase;
-  letter-spacing: 0, 06em;
+  letter-spacing: 0.06em;
 }
 
 .button {
   background-color: var(--accent-color);
   color: var(--primary-background-color);
-  font-family: 'Roboto';
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
-  letter-spacing: 0, 06em;
+  letter-spacing: 0.06em;
+}
+.button:hover,
+.button:focus {
+  background-color: #188ce8;
 }
 .features .feature-names {
-  font-family: 'Roboto';
   font-weight: 700;
   font-size: 14px;
   line-height: 1.2;
   text-transform: uppercase;
-  letter-spacing: 0, 03em;
+  letter-spacing: 0.03em;
 }
 .features .feature-def {
-  font-family: 'Roboto';
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
   color: var(--seconday-text-color);
-  letter-spacing: 0, 03em;
+  letter-spacing: 0.03em;
 }
 .team-info {
   background-color: var(--button);
 }
 
 .secondary-heading {
-  font-family: 'Roboto';
   font-weight: 700;
   font-size: 36px;
   line-height: 1.2;
   text-align: center;
-  letter-spacing: 0, 03em;
+  letter-spacing: 0.03em;
 }
 
 .team .team-member {
-  font-family: 'Roboto';
   font-weight: 500;
   font-size: 16px;
   line-height: 1.2;
   text-align: center;
-  letter-spacing: 0, 03em;
+  letter-spacing: 0.03em;
 }
 .team .team-occupation {
   color: var(--seconday-text-color);
-  font-family: 'Roboto';
   font-weight: 400;
   font-size: 16px;
   line-height: 1.2;
   text-align: center;
-  letter-spacing: 0, 03em;
+  letter-spacing: 0.03em;
 }
 
 /*footer*/
@@ -150,33 +148,32 @@ body {
   font-size: 26px;
   line-height: 1.2;
   text-decoration-line: none;
-  letter-spacing: 0, 03em;
+  letter-spacing: 0.03em;
 }
 .brandmark:hover,
 .brandmark:focus {
   color: var(--accent-color);
 }
 .address {
-  font-family: 'Roboto';
   font-weight: 400;
   font-size: 14px;
   font-style: normal;
   line-height: 1.7;
   color: var(--primary-background-color);
-  letter-spacing: 0, 03em;
+  letter-spacing: 0.03em;
 }
 .basement .contacts {
-  color: var(--seconday-text-color);
-  font-family: 'Roboto';
+  color: rgba(255, 255, 255, 0.6);
   font-weight: 400;
   font-size: 14px;
   font-style: normal;
   line-height: 1.7;
-  letter-spacing: 0, 03em;
+  letter-spacing: 0.03em;
+  text-decoration: none;
 }
 .basement .contacts:focus,
 .basement .contacts:hover {
-  color: var(--primary-background-color);
+  color: var(--secondary-background-color);
 }
 /*Portfolio*/
 
@@ -186,11 +183,10 @@ body {
 
 .button-menu {
   background-color: var(--button);
-  font-family: 'Roboto';
   font-weight: 500;
   font-size: 16px;
   line-height: 1.7;
-  letter-spacing: 0, 03em;
+  letter-spacing: 0.03em;
 }
 .button-menu:focus,
 .button-menu:hover {
@@ -201,25 +197,22 @@ body {
 .button-main {
   background-color: var(--accent-color);
   color: var(--primary-background-color);
-  font-family: 'Roboto';
   font-weight: 500;
   font-size: 16px;
   line-height: 1.7;
-  letter-spacing: 0, 03em;
+  letter-spacing: 0.03em;
 }
 .models .models-heading {
   color: var(--primaryy-text-color);
-  font-family: 'Roboto';
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
-  letter-spacing: 0, 06em;
+  letter-spacing: 0.06em;
 }
 .models .models-def {
   color: var(--secondary-background-color);
-  font-family: 'Roboto';
   font-weight: 400;
   font-size: 16px;
   line-height: 2;
-  letter-spacing: 0, 03em;
+  letter-spacing: 0.03em;
 }

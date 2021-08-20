@@ -202,6 +202,9 @@ body {
   line-height: 1.7;
   letter-spacing: 0.03em;
 }
+.models a {
+  text-decoration: none;
+}
 .models .models-heading {
   color: var(--primaryy-text-color);
   font-weight: 700;
